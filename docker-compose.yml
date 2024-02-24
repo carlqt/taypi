@@ -1,0 +1,15 @@
+version: '3.8'
+
+services:
+  web:
+    build: .
+    command: ./bin/rails s -b 0.0.0.0
+    ports:
+      - "3000:3000"
+      - "1234:1234"
+    volumes:
+      - .:/app
+    environment:
+      - RUBY_DEBUG_OPEN=true
+      - RUBY_DEBUG_PORT=1234
+      - RUBY_DEBUG_HOST=0.0.0.0
