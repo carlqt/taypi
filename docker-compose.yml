@@ -6,13 +6,13 @@ services:
     command: ./bin/rails s -b 0.0.0.0
     ports:
       - "3000:3000"
-      - "1234:1234"
+      - "1237:1237"
     develop:
       watch:
         - action: sync
           path: .
           target: /app
+    tty: true
+    stdin_open: true
     environment:
       - RUBY_DEBUG_OPEN=true
-      - RUBY_DEBUG_PORT=1234
-      - RUBY_DEBUG_HOST=0.0.0.0

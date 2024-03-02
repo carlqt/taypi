@@ -16,7 +16,7 @@
       "type": "rdbg",
       "name": "Attach with rdbg",
       "request": "attach",
-      "debugPort": "localhost:1234",
+      "debugPort": "localhost:1237",
       "localfsMap": "/app:${workspaceFolder}",
     }
   ]
