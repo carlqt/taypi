@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo "Hello $@"
+
+docker compose exec web bash -c "bundle exec rdbg $@"

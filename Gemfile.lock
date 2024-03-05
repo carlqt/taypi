@@ -134,7 +134,7 @@ GEM
       pry (>= 0.10.4)
     psych (5.1.2)
       stringio
-    puma (5.6.7)
+    puma (6.4.2)
       nio4r (~> 2.0)
     racc (1.7.1)
     rack (2.2.8)
@@ -220,7 +220,7 @@ DEPENDENCIES
   jbuilder
   memory_profiler
   pry-rails
-  puma (~> 5.0)
+  puma (~> 6.0)
   rack-mini-profiler
   rails (~> 7.0.8)
   sprockets-rails

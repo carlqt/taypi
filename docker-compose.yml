@@ -15,4 +15,11 @@ services:
     tty: true
     stdin_open: true
     environment:
+      - WEB_CONCURRENCY=3
       - RUBY_DEBUG_OPEN=true
+      # - RUBY_DEBUG_PORT=1237
+      # - RUBY_DEBUG_HOST=0.0.0.0
+      # - RUBY_DEBUG_FORK_MODE=parent
+      # - RUBY_DEBUG_ADDED_RUBYOPT='-r debug/...'
+    # volumes:
+    #   - .:/app

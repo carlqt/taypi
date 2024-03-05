@@ -1,7 +1,7 @@
 class PingController < ApplicationController
   def index
     greet = "world"
-    binding.break
+    binding.b
 
     render json: { hello: greet }, status: :ok
   end
